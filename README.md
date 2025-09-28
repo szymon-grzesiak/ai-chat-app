@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Chat App
 
-## Getting Started
+I built this Next.js app for the recruitment task. It includes mocked login, a Gemini-powered streaming chat, file and image uploads with previews (max 8 MB), and a local profile editor.
 
-First, run the development server:
+## Setup
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Install dependencies with `npm install`.
+2. Create `.env.local` and add `GOOGLE_GENERATIVE_AI_API_KEY=your_key_here`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Run the app
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Start the dev server: `npm run dev`.
+2. Open <http://localhost:3000> and log in with `test@example.com` / `password123`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## What you can do
 
-## Learn More
+- Chat with the AI and watch responses stream in real time.
+- Attach images, PDFs, Office docs, text, or JSON files and reference them in the conversation.
+- Edit your name, email, and avatar on the profile page; the data stays in the browser.
 
-To learn more about Next.js, take a look at the following resources:
+## Checks before submit
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `npm run lint`
+- `npm run build`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Submission steps
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Commit the repo.
+2. Run `git bundle create ai-chat-app.bundle --all` in the project root.
+3. Send the `ai-chat-app.bundle` file through the form.
