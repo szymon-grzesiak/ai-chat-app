@@ -29,3 +29,4 @@ I built this Next.js app for the recruitment task. It includes mocked login, a G
 2. Run `git bundle create ai-chat-app.bundle --all` in the project root.
 3. Send the `ai-chat-app.bundle` file through the form.
 # ai-chat-app
+# ai-chat-app
